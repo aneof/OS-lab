@@ -191,7 +191,7 @@ int main(int argc, char *argv[])
                                         if(i==0) // gyrise kapoio I/O apo ton sd
                                         {
                                                 memset(temp, 0, sizeof(temp));
-                                                n= read(sd, buf, 256);
+                                                n= insist_read(sd, buf, 256);
 
                                                 if (n <= 0) {
                                                                 perror("read");
@@ -227,7 +227,7 @@ int main(int argc, char *argv[])
                                                         //printf("I As a Client: ");
 
 
-                                                        n=read(0, buf, 256);
+                                                        n=insist_read(0, buf, 256);
                                                         buf[sizeof(buf) - 1] = '\0';
 
 
