@@ -195,7 +195,7 @@ int main(void)
 
                 for (i=0; i<2; i++){
 
-                FD_SET(array[i],&readfd);
+                FD_SET(array[i],&ffd);
                 if (array[i]>max){     //omoiws to max me client
                         max=array[i];
                         }
@@ -215,7 +215,7 @@ int main(void)
                                                         memset(temp, 0, sizeof(temp));
 
 
-                                                        n=read(newsd, buf, 256);  //insist read better
+                                                        n=insist_read(newsd, buf, 256);  //insist read better
                                                         /*if (n <= 0) {
                                                                 perror("read");
                                                                 flag=1;
@@ -261,7 +261,7 @@ int main(void)
                                                 else{
                                                         memset(temp, 0, sizeof(temp));
                                                         memset(buf, 0, sizeof(buf));
-                                                        n=read(0, buf, 256);
+                                                        n=insist_read(0, buf, 256);
                                                         if (n <= 0) {
                                                                 perror("read");
                                                                 flag=1;
