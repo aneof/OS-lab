@@ -4,8 +4,8 @@
  *
  * Implementation of virtio-crypto qemu backend device.
  *
- * Dimitris Siakavaras <jimsiak@cslab.ece.ntua.gr>
- * Stefanos Gerangelos <sgerag@cslab.ece.ntua.gr>
+ * Alexandros Neofytou
+ * Dimitris Adamis
  *
  */
 
