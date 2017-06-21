@@ -5,9 +5,9 @@
  * Implementation of character devices
  * for virtio-crypto device
  *
- * Vangelis Koukis <vkoukis@cslab.ece.ntua.gr>
- * Dimitris Siakavaras <jimsiak@cslab.ece.ntua.gr>
- * Stefanos Gerangelos <sgerag@cslab.ece.ntua.gr>
+ * Alexandros Neofytou
+ * Dimitris Adamis
+ * 
  *
  */
 #include <linux/cdev.h>
